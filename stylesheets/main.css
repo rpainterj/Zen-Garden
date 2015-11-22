@@ -375,7 +375,8 @@ body {
 
 .page-wrapper {
   background-color: #074e90;
-  max-width: 1390px; }
+  max-width: 1390px;
+  margin: 0 auto; }
 
 li {
   list-style-type: none; }
