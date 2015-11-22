@@ -1,0 +1,33 @@
+
+
+@mixin text_shadow($color, $size){
+text-shadow:  
+(-1px)*$size (1px)*$size 0 $color,  
+(-1px)*$size (-1px)*$size 0 $color,
+(1px)*$size (1px)*$size 0 $color,
+(1px)*$size (-1px)*$size 0 $color;
+
+@include prefixer(text-shadow, $color $size, webkit moz spec o)
+}
+
+@keyframes hand{
+	0%{background-size: 1400px;
+
+	}
+
+	100%{background-size: 1600px;
+
+	}
+
+}
+
+@keyframes triangle{
+	0%{top: -160px;;
+
+	}
+	
+	100%{top: -120px;;
+
+	}
+
+}
