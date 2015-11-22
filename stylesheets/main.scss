@@ -12,6 +12,7 @@ box-sizing:border-box;
 
 .page-wrapper{
 	background-color: $primary_background_color;
+	max-width: 1390px;
 }
 
 li{
@@ -79,10 +80,12 @@ h1{
 	display: inline-block;
 	padding: 10px 10px 0px 10px;
 	margin-top: 0;
+	font-size: 4em;
 
 	@media screen and (min-width: 800px){
 		margin-top: 100px;
 		margin-bottom: 0;
+		font-size: 5em;
 	}
 
 	@media screen and (min-width: 800px){
@@ -493,10 +496,15 @@ main paragraphs
 	h3{
 		font-family: "Stint Ultra Expanded";
 		margin-top: 0;
-		padding:12px;
 		text-align: right;
 		color: $primary_text_color;
 		padding-right: 22px;
+		font-size: 1.6em;
+
+		@media screen and (min-width: 500px){
+			font-size: 2em;
+		}
+
 	}
 
 	p{
@@ -522,6 +530,12 @@ main paragraphs
 	a{
 		background-color: $link_background_color;
 		color: $primary_text_color;
+		
+		&:hover{
+			background-color: $secondary_background_color;
+			border: 1px solid $primary_text_color;
+			box-sizing: content-box;
+		}
 	}
 }
 
